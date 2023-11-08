@@ -1,0 +1,1249 @@
+* {
+    box-sizing: border-box;
+    /* Variables */
+    --color_principal: #004a98;
+    --color_secundario: #FE6F61
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*==========Para todos==========*/
+
+.box_mobile {
+    display: none;
+}
+
+.box_desktop {
+    display: block;
+}
+
+.cont_text .title_h1 {
+    color: var(--color_secundario);
+    font-weight: bold;
+    margin: 0px 0 30px;
+    text-align: center;
+    font-size: 57px;
+}
+
+.cont_button .button_1 {
+    display: block;
+    width: 206px;
+    height: 46px;
+    font-size: 28px;
+    font-weight: 300;
+    padding: 0px 5px 0px;
+    background-color: var(--color_secundario);
+    color: #fff;
+    border-radius: 10px;
+    border: 0px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.cont_button .button_2 {
+    display: block;
+    width: 206px;
+    height: 46px;
+    font-size: 28px;
+    font-weight: 300;
+    padding: 0px 5px 0px;
+    background-color: var(--color_principal);
+    color: #fff;
+    border-radius: 10px;
+    border: 0px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.cont_button .button_1:hover {
+    background-color: var(--color_principal);
+    border: 1px solid var(--color_secundario);
+
+}
+
+.cont_button .button_2:hover {
+    background-color: var(--color_secundario);
+    border: 1px solid var(--color_principal);
+
+}
+
+.categoria-link {
+    font-size: 18px;
+    letter-spacing: 3.2px;
+    margin: 0 0 0px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 40px 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.categoria-link a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.categoria-link a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+@media screen and (max-width: 900px) {
+    .box_desktop {
+        display: none;
+    }
+
+    .box_mobile {
+        display: block;
+    }
+
+    .cont_text .title_h1 {
+        font-size: calc(2.06rem + 1.5vw);
+
+    }
+
+    .cont_button .button_1,
+    .cont_button .button_2 {
+        width: 160px;
+        height: 40px;
+        font-size: 20px;
+
+    }
+
+    .cont_button img {
+        max-width: 50px;
+        width: 100%;
+
+    }
+
+    .content_3 .tag {
+        row-gap: 5px;
+        padding: 35px 0 20px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .categoria-link span {
+        display: none;
+    }
+
+    .cont_text .title_h1 {
+        font-size: 31px;
+        margin-bottom: 10px;
+
+    }
+
+    .categoria-link {
+        font-size: 16px;
+        flex-direction: column;
+        padding: 20px 0 40px;
+    }
+
+}
+
+
+/*==============================*/
+
+/* ====================== INTRO ====================== */
+
+.intro_main {
+    background-color: var(--color_principal);
+    height: 100vh;
+}
+
+.intro_banner {
+    height: 66vh;
+    background-color: var(--color_principal);
+}
+
+.intro_banner_img {
+    position: relative;
+    background-image: url("../imgs/banner_principal.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro_content {
+    background-color: var(--color_principal);
+}
+
+
+.intro_content_text {
+    width: 86%;
+}
+
+
+.intro_content .intro_content_text .b_text {
+    padding: 35px 0 0;
+
+}
+
+.intro_content .intro_content_text .b_text .text1 {
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    margin: 0 0 0px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.intro_content .intro_content_text .b_text .text1 span {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 0.5;
+    letter-spacing: 0.5px;
+    padding-bottom: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-color: var(--color_secundario);
+
+}
+
+.intro_content .intro_content_text .b_text .text2,
+.intro_content .intro_content_text .b_text .text3 {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin: 0 0 10px;
+    color: #fff;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    .intro_content .intro_content_text .b_text .text3 {
+        margin: 30px 0 0px;
+    }
+    
+}
+.intro_banner .intro_banner_img .button_1 {
+    display: block;
+    outline: none;
+    max-width: 280px;
+    width: 280px;
+    padding: 10px 0px 5px 0px;
+    border-radius: 0px;
+    background-color: var(--color_secundario);
+    height: 66px;
+    color: #fff;
+    border-width: 0px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.1;
+
+}
+
+.intro_banner .intro_banner_img .button_1 strong {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.intro_content .intro_content_text .button_2 {
+    display: block;
+    outline: none;
+    max-width: 240px;
+    width: 240px;
+    padding: 8px 0px 5px 0px;
+    border-radius: 0px;
+    color: #fff;
+    background-color: var(--color_secundario);
+    height: 55px;
+    border-width: 0px;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.1;
+
+}
+
+.intro_content .intro_content_text .button_2 strong {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: var(--color_principal);
+}
+
+footer .column1 {
+    width: 15%;
+    flex: 0 0 auto;
+}
+
+footer .column2 {
+    width: 25%;
+    flex: 0 0 auto;
+}
+
+footer .column3 {
+    width: 20%;
+    flex: 0 0 auto;
+}
+
+footer .column4 {
+    width: 25%;
+    flex: 0 0 auto;
+}
+
+footer .column5 {
+    width: 15%;
+    flex: 0 0 auto;
+}
+
+footer .toolbar-contact ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding: 0;
+    margin: 0
+}
+
+
+.footer_text {
+    font-size: 9px;
+    text-align: center;
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ====================== navbar ====================== */
+
+
+.header_blue,
+.header_white {
+    background-color: var(--color_principal);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s ease-out 0s;
+    padding: 6px 0 12px;
+}
+
+.header_white {
+    background-color: #ffffff;
+
+}
+
+.header_blue .nav-inner .navbar,
+.header_white .nav-inner .navbar {
+    padding: 0px;
+}
+
+.header_blue .navbar-toggler,
+.header_white .navbar-toggler {
+    padding: 0px;
+    border: 1px solid transparent;
+}
+
+.header_blue .navbar-toggler:focus,
+.header_white .navbar-toggler:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+.header_blue .navbar-toggler .toggler-icon,
+.header_white .navbar-toggler .toggler-icon {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: 5px 0;
+    position: relative;
+    transition: all 0.3s ease-out 0s;
+}
+
+.header_white .navbar-toggler .toggler-icon {
+    background-color: var(--color_principal);
+}
+
+.header_blue .navbar-toggler.active .toggler-icon:nth-of-type(1),
+.header_white .navbar-toggler.active .toggler-icon:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 7px;
+}
+
+.header_blue .navbar-toggler.active .toggler-icon:nth-of-type(2),
+.header_white .navbar-toggler.active .toggler-icon:nth-of-type(2) {
+    opacity: 0;
+}
+
+.header_blue .navbar-toggler.active .toggler-icon:nth-of-type(3),
+.header_white .navbar-toggler.active .toggler-icon:nth-of-type(3) {
+    transform: rotate(135deg);
+    top: -7px;
+}
+
+
+
+.header_blue .navbar-nav .nav-item .page-scroll,
+.header_white .navbar-nav .nav-item .page-scroll {
+    position: relative;
+    margin: 16px 15px 0px;
+    padding: 2px 10px 1px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease-out 0s;
+    text-transform: capitalize;
+}
+
+.header_white .navbar-nav .nav-item .page-scroll {
+    color: var(--color_principal);
+
+}
+
+.header_blue .navbar-nav .nav-item .page-scroll:hover,
+.header_white .navbar-nav .nav-item .page-scroll:hover {
+    background-color: var(--bs-secondary);
+    color: #FFF;
+}
+
+.header_blue .navbar-nav .nav-item .page-scroll.active,
+.header_white .navbar-nav .nav-item .page-scroll.active {
+    background-color: var(--bs-secondary);
+    color: #FFF;
+}
+
+
+.navbar-nav .new_block {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header_blue .navbar-nav .new_block .page-scroll,
+.header_white .navbar-nav .new_block .page-scroll {
+    margin: 0px 15px 0px;
+}
+
+.header_blue .navbar-nav .new_block .parallelogram,
+.header_white .navbar-nav .new_block .parallelogram {
+    transform: skew(-20deg);
+    margin: 0px 0px 0px 20px;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    height: 15px;
+    max-width: 46px;
+    width: 100%;
+    background-color: var(--bs-secondary);
+}
+
+.navbar-nav .new_block .parallelogram span {
+    display: inline-block;
+    transform: skew(20deg);
+}
+
+@media screen and (max-width: 990px) {
+    .navbar-nav .new_block {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 16px 0px 0px;
+    }
+
+    .navbar-nav .new_block .parallelogram {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .navbar .logo_1 {
+        max-width: 90px;
+        width: 100%;
+    }
+
+    .navbar .logo_2 {
+        max-width: 96px;
+        width: 100%;
+    }
+}
+
+
+/*RUTAS MAIN*/
+
+.rutas_main {
+
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    justify-content: stretch;
+    align-items: stretch;
+    grid-template-columns: 100%
+}
+
+
+header {
+    height: auto;
+    position: relative;
+    width: 100%;
+    display: flex;
+    z-index: 9999;
+    justify-content: center;
+    background-color: #004a98;
+}
+
+
+.mapa {
+    background-color: rgb(165, 166, 168);
+    width: 100%;
+    height: 100%;
+
+}
+
+.rut_sidebar {
+    width: 325px;
+    display: block;
+    position: absolute;
+    background: #004a98;
+    z-index: 1111;
+    left: 0;
+    top: 69px;
+    bottom: 0;
+
+}
+
+.rut_sidebar .nav-pills {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
+}
+
+.rut_sidebar .nav-pills li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    line-height: 13px;
+}
+
+
+
+.rut_sidebar .nav-pills li .nav-link {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 20px;
+    border-radius: 0px !important;
+    background-color: var(--color_secundario);
+}
+
+@keyframes anim {
+    0% {
+        background-color: var(--color_secundario);
+    }
+
+    100% {
+        background-color: var(--color_principal);
+        ;
+    }
+}
+
+.rut_sidebar .nav-pills li .nav-link:hover {
+    background-color: var(--color_principal);
+    animation-name: anim;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+}
+
+.rut_sidebar .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: var(--color_principal);
+}
+
+
+
+.rut_sidebar .tab-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ruta_welcome {
+    padding: 20px 30px 20px 30px;
+}
+
+.ruta_welcome h2 {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.ruta_welcome span {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 30px 0;
+    display: block;
+}
+
+.ruta_welcome p {
+    color: white;
+    line-height: 17px;
+}
+
+.ruta_welcome .paso1 {
+    background-image: url(../imgs/rutas_tab0_ico1.png);
+    background-repeat: no-repeat;
+    background-size: auto 52px;
+    background-position: right 0;
+    padding-right: 105px;
+    padding-bottom: 25px;
+}
+
+.ruta_welcome .paso2 {
+    background-image: url(../imgs/rutas_tab0_ico2.png);
+    background-repeat: no-repeat;
+    background-size: auto 52px;
+    background-position: right 0;
+    padding-right: 100px;
+    padding-bottom: 25px;
+}
+
+.ruta_welcome .paso3 {
+    background-image: url(../imgs/rutas_tab0_ico3.png);
+    background-repeat: no-repeat;
+    background-size: auto 52px;
+    background-position: right 0;
+    padding-right: 110px;
+    padding-bottom: 25px;
+}
+
+.rut_sidebar .ruta_logo {
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+/*/*RUTAS MAIN*/
+
+
+/* RUTAS TABS */
+.ruta_tabs .rutas-body {
+    padding: 20px 28px 20px 32px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #999999;
+    background-color: white;
+}
+
+.ruta_tabs .rutas-body p {
+    margin-bottom: 18px;
+}
+
+.ruta_tabs .rutas-body .ruts_input_a {
+    margin: 5px 0 0px;
+
+}
+
+.ruta_tabs .rutas-body .ruts_input_a .box {
+    margin: 10px 0 0px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    height: 34px;
+    width: auto;
+    padding: 1px 10px 1px 30px;
+
+}
+
+
+
+
+.ruta_tabs .rutas-body .ruts_input_a .circle {
+    background-color: var(--color_secundario);
+    width: 26px;
+    height: 25px;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    margin-left: -42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.ruta_tabs .rutas-body .ruts_input_a input {
+    width: 202px;
+    height: 28px;
+    border: none;
+    color: #999999;
+    font-size: 14px;
+    outline: none;
+}
+
+.ruta_tabs .rutas-body .ruts_input_a .reset {
+    color: #999999;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.ruta_tabs .rutas-body .ruts_input_b {
+    margin: 10px 0 0px;
+}
+
+.ruts_btn {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 35px;
+    grid-gap: 0px 10px;
+
+}
+
+.ruts_btn button {
+    font-size: 13px;
+    text-align: left;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.ruts_btn button span {
+    margin: 0 5px 0 0;
+    font-size: 22px;
+}
+
+.ruts_search {
+    margin: 20px 0 10px;
+    font: optional;
+
+}
+
+
+.ruts_search button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ruta_search_mb {
+    margin: 0px 0 0px;
+    padding: 20px 20px 20px 25px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #999999;
+    background-color: white;
+}
+
+.ruta_search_mb .ruts_input_a {
+    margin: 5px 0 0px;
+}
+
+.ruta_search_mb .ruts_input_a {
+    margin-bottom: 10px;
+}
+
+.ruta_search_mb .ruts_input_a input {
+    width: 202px;
+    height: 28px;
+    border: none;
+    color: #999999;
+    font-size: 14px;
+    outline: none;
+}
+
+.ruta_search_mb .box2 {
+    margin: 20px 0 0px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    height: 34px;
+    display: flex;
+    width: auto;
+    padding: 1px 20px 1px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.ruta_tabs .rutas-body .opciones_rutas {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    padding: 10px 0 0;
+
+}
+
+.opciones_rutas .form-check .form-select {
+    background-position: right 0.25rem center;
+    padding: 0.0rem 1.05rem 0.0rem 0.40rem;
+    display: inline-block;
+    width: 60px;
+    font-size: 14px;
+    margin: 0 0 0 5%;
+}
+
+
+
+
+.accordion .accordion-body,
+.rutasempresa .accordion-body {
+    color: #999999;
+    padding: 0px 20px 20px;
+
+}
+
+.accordion .accordion-item {
+    border: 0px;
+    --bs-accordion-inner-border-radius: 0px;
+
+}
+
+.accordion .accordion-button {
+    color: #ffffff;
+    background-color: #999999;
+    border: 0px;
+    font-size: 13px;
+    padding: 9px 40px 9px;
+
+}
+
+/* Accordion mobile */
+.Ver_detalles .accordion-button {
+    color: #999999;
+    background-color: #ffffff;
+    border: 0px;
+    font-size: 13px;
+    padding: 9px 20px 9px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    column-gap: 26%;
+}
+
+
+.Ver_detalles .accordion-button::after {
+    background-image: var(--bs-accordion-btn-active-icon_2);
+    margin-left: 0;
+}
+
+
+/* Rutas de transporte */
+
+.accordion .rt_options .option {
+    margin: 25px 0px 10px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-gap: 10px;
+}
+
+.accordion .rt_options .option .dat1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.accordion .rt_options .option .dat1 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.accordion .rt_options .option .dat1 img {
+    width: 90px;
+    margin-right: 10px;
+}
+
+.accordion .rt_options .option .dat1 p {
+    text-align: left;
+}
+
+.accordion .rt_options .option .dat2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.accordion .rt_options .option .dat2 label {
+    font-size: 13px;
+}
+
+.accordion .rt_options .option .dat2 .form-check {
+    margin-right: 20px;
+}
+
+/* Planea Viaje */
+.planeaviaje .option_paradero {
+    display: flex;
+    align-items: center;
+
+}
+
+.planeaviaje .rt_options .option_paradero {
+    height: 34px;
+    width: auto;
+    padding: 1px 10px 1px 0px;
+}
+
+
+.planeaviaje .rt_options .option_paradero .circle {
+    background-color: var(--color_secundario);
+    width: 26px;
+    height: 25px;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 11px;
+}
+
+.planeaviaje .rt_options .option_paradero p {
+    font-size: 13px;
+    margin-left: 35px;
+    line-height: 15px;
+}
+
+/* Rutas de empresa */
+
+.ruta_tabs .rutas-body .ruts_input_a .box2 {
+    margin: 5px 0 0px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    height: 34px;
+    display: flex;
+    width: auto;
+    padding: 1px 20px 1px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ruta_tabs .rutas-body .ruts_input_a .label {
+    margin: 10px 0 0px;
+
+}
+
+
+.Name_rutas {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 20px 40px;
+
+}
+
+.Name_rutas .Column1 .to_1 {
+    margin: 0px 0 10px;
+    font-size: 10px;
+}
+
+.Name_rutas .Column1 .to_1 .text_block {
+    position: relative;
+    margin: 0px 0px 0px;
+    max-width: 100px;
+    width: 100%;
+    padding: 2px 0px 1px 5px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 10px;
+    color: #FFF;
+    text-transform: capitalize;
+    background-color: var(--bs-secondary);
+}
+
+.Name_rutas .Column1 .to_ruts1 {
+    margin: 0 5px 0 0;
+    font-size: 10px;
+}
+
+
+
+/* COLORES RUTAS */
+.rt_options .green p {
+    color: #41810c
+}
+
+.rt_options .purple p {
+    color: #39048f
+}
+
+.rt_options .pink p {
+    color: #a8018c
+}
+
+.rt_options .red p {
+    color: #B44144
+}
+
+/* VENTNAS MOBLE */
+#Box_Planetuviaje,
+#Box_Rutasempresa,
+#Box_RutasDistrito {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .intro_content_text {
+        width: 90%;
+    }
+
+    .intro_content .intro_content_text .flecha1,
+    .flecha2 {
+        text-align: center;
+
+    }
+
+    .intro_content .intro_content_text .flecha1 {
+        text-align: center;
+        margin: 10px 0 10px;
+
+    }
+
+    .intro_content .intro_content_text .flecha2 {
+        text-align: center;
+        margin: 10px 0 10px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .intro_content_text {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+
+
+    .intro_content .intro_content_text .b_text {
+        padding: 0px;
+    }
+
+    .intro_content .intro_content_text .b_text .text1 {
+        font-size: 23px;
+        letter-spacing: 0.5px;
+        margin: 0 0 0px;
+        line-height: 1.2;
+    }
+
+    .intro_content .intro_content_text .b_text .text1 span {
+        font-size: 23px;
+
+    }
+
+
+
+
+    .footer_text {
+        font-size: 10px;
+        line-height: 1.6;
+
+    }
+
+
+    footer .column1 {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0 30px;
+    }
+
+    footer .column2 {
+        width: 100%;
+        padding: 0px 0 10px;
+
+    }
+
+    footer .column3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0 20px;
+    }
+
+    footer .column3 .toolbar-contact {
+        width: 300px;
+        padding: 0px 0 0px;
+    }
+
+    footer .column4 {
+        width: 100%;
+        padding: 0px 0 10px;
+    }
+
+    footer .column5 {
+        width: 100%;
+        text-align: center !important;
+        padding: 0px 0 60px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .intro_banner {
+        height: 70vh !important;
+    }
+
+    .intro_banner_img {
+        background-image: url(../imgs/Banner_principal_mob.jpg);
+
+    }
+
+
+    .intro_banner .intro_banner_img .button_1 {
+
+        max-width: 200px;
+        width: 100%;
+        padding: 10px 0px 5px 0px;
+        border-inline: 1px solid rgba(255, 255, 255, 0.7);
+        height: 50px;
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    .intro_banner .intro_banner_img .button_1 strong {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    /* ====================== navbar ====================== */
+    .navbar-nav .nav-item a {
+        position: relative;
+        margin: 0px 0px 0px;
+        padding: 15px 0px 15px 10px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.9);
+        transition: all 0.3s ease-out 0s;
+        text-transform: capitalize;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    #Box_Planetuviaje,
+    #Box_Rutasempresa,
+    #Box_RutasDistrito {
+        display: block;
+    }
+
+    /* MAPA */
+    .mapa {
+        width: 100%;
+        height: 70vh;
+    }
+
+    /* PAGE RUTAS */
+    .ruta_tabs h3 {
+        color: black;
+    }
+
+    .rut_sidebar {
+        width: 100%;
+        grid-template-rows: auto;
+        position: static;
+    }
+
+    .rut_sidebar .nav-pills {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: 1100;
+    }
+
+    .rut_sidebar .nav-pills li .nav-link {
+
+        height: 100%;
+    }
+
+    .ruta_tabs .rutas-body {
+
+        left: -600px;
+        position: absolute;
+        bottom: 100px;
+    }
+
+    .ruta_tabs .ruta_search_mb {
+
+        position: absolute;
+        width: 100%;
+        bottom: 100px;
+        z-index: 50;
+    }
+
+
+    .ruta_tabs .planeaviaje {
+        z-index: 51;
+        position: absolute;
+        bottom: 100px;
+        width: 100%;
+    }
+
+    .ruta_logo {
+        display: none;
+    }
+
+    .ruta_welcome {
+
+        position: absolute;
+        top: 69px;
+        background: var(--color_principal);
+        bottom: 100px;
+    }
+
+    .ruta_welcome h2 {
+        text-align: center;
+    }
+
+
+
+    #accordionExample {
+        display: none;
+    }
+
+}

@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="es_PE">
+
+<head>
+  <title>ATU</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <!-- ========================= favicon.ico ========================= -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
+  <!-- ========================= CSS ========================= -->
+
+  
+  <link rel="stylesheet" href="bst/css/bootstrap.css" />
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+
+  <!--=========================Fuentes=========================-->
+  <link href="https://fonts.cdnfonts.com/css/museo-sans-rounded" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+
+
+
+  <div class="rutas_main">
+    <!-- ========================= Inicio Header========================= -->
+    <header class="header_blue navbar-area">
+      <div class="container">
+
+        <div class="row align-items-end">
+          <div class="col-lg-12">
+            <div class="nav-inner">
+              <!-- navbar collapse -->
+              <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand order-1" href="planrutas.html">
+                  <img src="imgs/logo_subetecambio.png" alt="Súbete al Cambio" width="110px" class="logo_1">
+                </a>
+                <button class="navbar-toggler order-2 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                </button>
+
+                <a href="#" class="order-3"><img src="imgs/Logo_ATU_blue.png" alt="Logo ATU" width="140px" class="logo_2"></a>
+
+                <div class="navbar-collapse sub-menu-bar justify-content-center order-lg-2 order-4 mt-1 collapse"
+                  id="navbarSupportedContent">
+                  <ul id="nav" class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#">Beneficios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#">Capacitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll active" href="#">Plan de rutas</a>
+                    </li>
+                    <li class="nav-item new_block">
+                      <a class="parallelogram"><span>Nuevo</span></a>
+                      <a class="page-scroll" href="#">Reglamento</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#">Tupa</a>
+                    </li>
+                  </ul>
+                </div>
+
+
+
+              </nav>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <!-- =========================Fin Header========================= -->
+
+    <main>
+      <!-- =========================Mapa========================= -->
+
+      <div class="mapa">
+        <div>
+
+
+          <!-- AQUÍ CODE API DE MAPA -->
+
+
+        </div>
+      </div>
+
+
+      <div class="rut_sidebar">
+
+        <!-- TABS RUTAS -->
+        <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
+
+          <li class="nav-item" role="presentation" id="ruta_option1">
+            <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+              <img src="imgs/rutas_tab1.png" alt="">
+              Planea tu viaje</button>
+          </li>
+          <li class="nav-item" role="presentation" id="ruta_option2">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+              <img src="imgs/rutas_tab2.png" alt="">
+              Rutas por empresa</button>
+          </li>
+          <li class="nav-item" role="presentation" id="ruta_option3">
+            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+              type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+              <img src="imgs/rutas_tab3.png" alt="">
+              Rutas por distrito</button>
+          </li>
+
+        </ul>
+
+        <!-- TABS CONTENIDO -->
+
+
+        <div class="tab-content ruta_tabs" id="pills-tabContent">
+          
+          
+          <!-- 1. PLANEA TU VIAJE -->
+          <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+            <!-- SEARCH CONTENT -->
+            <!-- ==================MOBILE==================-->
+            <div class="ruta_search_mb" id="Box_Planetuviaje">
+              <h3>Planea tu viaje
+              </h3>
+              <p>Si conoces tu destino y quieres<br>
+                saber cómo trasladarte, elige<br>
+                esta opción.
+              </p>
+              <div class="ruts_input_a">
+                <div class="box2">
+                  <input type="text" placeholder="¿A donde vas?">
+                  <span class="material-symbols-outlined">
+                    search
+                  </span>
+                </div>
+              </div>
+            </div>
+           
+     
+       
+            <!-- ==================MOBILE//==================-->
+
+
+            <div class="rutas-body">
+
+              <p><b>Ingresa</b> la dirección donde te encuentras
+                y luego hacia donde te diriges
+              </p>
+              <div class="ruts_input_a">
+                <div class="box">
+                  <div class="circle">A</div>
+                  <input type="text" placeholder="Ingresa dirección 1">
+                  <a href="#" class="reset">X</a>
+                </div>
+              </div>
+
+              <div class="ruts_input_a">
+                <div class="box">
+                  <div class="circle">B</div>
+                  <input type="text" placeholder="Ingresa dirección 1">
+                  <a href="#" class="reset">X</a>
+                </div>
+              </div>
+
+              <!-- Options Checkbox-->
+              <div class="ruts_btn">
+
+
+                <button class="btn btn-outline-secondary" data-bs-toggle="button">
+                  <span class="material-symbols-outlined">
+                    add
+                  </span>
+                  Añadir
+                </button>
+
+                <button class="btn btn-outline-secondary collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#btnOpciones" aria-controls="btnOpciones" aria-expanded="false">
+                  <span class="material-symbols-outlined">
+                    page_info
+                  </span>
+                  Opciones
+                </button>
+
+
+                <div class="opciones_rutas collapse" id="btnOpciones">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" checked="">
+                    <label class="form-check-label" for="flexCheckChecked1">
+                      Solo Buses
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked="">
+                    <label class="form-check-label" for="flexCheckChecked2">
+                      Rutas más directas
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" checked="">
+                    <label class="form-check-label" for="flexCheckChecked3">
+                      Paraderos más cercanas
+                    </label>
+                    <select class="form-select" aria-label="Kilometros">
+                      <option selected>1km</option>
+                      <option value="1">2km</option>
+                      <option value="2">3km</option>
+                      <option value="3">4km</option>
+                      <option value="4">5km</option>
+                      <option value="5">6km</option>
+                      <option value="6">7km</option>
+                      <option value="7">8km</option>
+                      <option value="8">9km</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="ruts_search">
+
+                <button class="btn btn-primary w-100">
+                  Buscar rutas
+                  <span class="material-symbols-outlined">
+                    search
+                  </span>
+                </button>
+
+              </div>
+
+            </div>
+
+
+            <!-- RESULTADOS RUTAS  -->
+            <div class="accordion planeaviaje " id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    RUTAS DE TRANSPORTE
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+
+
+                    <div class="rt_options">
+                      <div class="option green">
+                        <div class="dat1">
+                          <div>
+                            <img src="imgs/rutas/img_ruta1.png" alt="ruta 1">
+                            <p><b>ETUPSA73</b><br>
+                              <span>Ruta 7641</span>
+                            </p>
+                          </div>
+                          <strong>0.0 km</strong>
+                        </div>
+                        <div class="dat2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="RutaAnterior">
+                            <label class="form-check-label" for="RutaAnterior">
+                              Ruta anterior
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ida">
+                            <label class="form-check-label" for="ida">
+                              ida
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Vuelta">
+                            <label class="form-check-label" for="Vuelta">
+                              Vuelta
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="option_paradero">
+                        <div class="circle">|</div>
+                        <p>Paradero de interconexión<br>
+                          Cipriano Dulanto</p>
+                      </div>
+                      <div class="option purple">
+                        <div class="dat1">
+                          <div>
+                            <img src="imgs/rutas/img_ruta2.png" alt="ruta 1">
+                            <p><b>Unidos ETUSA</b><br>
+                              <span>Ruta 7501</span>
+                            </p>
+                          </div>
+                          <strong>0.4 km</strong>
+                        </div>
+                        <div class="dat2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="RutaAnterior">
+                            <label class="form-check-label" for="RutaAnterior">
+                              Ruta anterior
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ida">
+                            <label class="form-check-label" for="ida">
+                              ida
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Vuelta">
+                            <label class="form-check-label" for="Vuelta">
+                              Vuelta
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion Ver_detalles" id="accordionDetalles_1">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseDetalle" aria-expanded="false" aria-controls="collapseDetalle"> Ver más
+                      detalles
+                    </button>
+                  </h2>
+                  <div id="collapseDetalle" class="accordion-collapse collapse" data-bs-parent="#accordionDetalles_1">
+                    <div class="accordion-body">
+                      <div class="rt_options">
+                        <div class="option green">
+                          <div class="dat1">
+                            <div>
+                              <img src="imgs/rutas/img_ruta1.png" alt="ruta 1">
+                              <p><b>ETUPSA73</b><br>
+                                <span>Ruta 7641</span>
+                              </p>
+                            </div>
+                            <strong>0.0 km</strong>
+                          </div>
+                          <div class="dat2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="RutaAnterior">
+                              <label class="form-check-label" for="RutaAnterior">
+                                Ruta anterior
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="ida">
+                              <label class="form-check-label" for="ida">
+                                ida
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="Vuelta">
+                              <label class="form-check-label" for="Vuelta">
+                                Vuelta
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="Name_rutas">
+  
+                          <div class="Column1">
+                            <div class="to_1">
+                              <div class="text_block">Hacia pueblo libre</div>
+                            </div>
+                            <div class="to_ruts1">
+                              <p>
+                                - Sucre<br>
+                                - Pérez Araníbar <br>
+                                - Del Ejército<br>
+                                - José Pardo<br>
+                                - Bolognesi<br>
+                                - 28 de Julio<br>
+                                - Reducto<br>
+                                - San Martín <br>
+                                - Pedro de Osma<br>
+                                - Chorrillos<br>
+                                - José Olaya <br>
+                                - Defensores del Morro<br>
+                                - Prolongación Huaylas<br>
+                                - Guardia Civil Sur<br>
+                                - Vargas Machuca<br>
+                                - San Juan<br>
+                                - Los Héroes<br>
+                                - Mariátegui<br>
+                                - Primavera<br>
+                                - Inti Raymi<br>
+                                - San Pablo Egúsquiza</p>
+                            </div>
+                          </div>
+                          <div class="Column1">
+                            <div class="to_1">
+                              <div class="text_block">Hacia Chorillos</div>
+                            </div>
+                            <div class="to_ruts1">
+                              <p>
+                                - San Pablo Egúsquiza<br>
+                                - Inti Raymi<br>
+                                - Primavera<br>
+                                - Mariátegui<br>
+                                - Los Héroes<br>
+                                - San Juan<br>
+                                - Vargas Machuca<br>
+                                - Prolongación Huaylas<br>
+                                - Defensores del Morro<br>
+                                - A. Iglesias<br>
+                                - Chorrillos<br>
+                                - Pedro de Osma<br>
+                                - Miguel Grau<br>
+                                - Reducto<br>
+                                - 28 de Julio<br>
+                                - Bolognesi<br>
+                                - José Pardo<br>
+                                - Del Ejército<br>
+                                - Pérez Araníbar<br>
+                                - Sucre</p>
+                            </div>
+                          </div>
+                          <div class="Column1">
+                            <div class="to_1">
+                              <div class="text_block">Distritos</div>
+                            </div>
+                            <div class="to_ruts1">
+                              <p>
+                                - Pueblo Libre<br>
+                                - Magdalena<br>
+                                - San Isidro<br>
+                                - Miraflores<br>
+                                - Barranco<br>
+                                - Chorillos<br>
+                                - San Juan de Miraflores
+                              </p>
+                            </div>
+                          </div>
+                          <div class="Column1">
+                            <div class="to_1">
+                              <div class="text_block">Horarios</div>
+                            </div>
+                            <div class="to_ruts1">
+                              <p>
+                                - Lunes a sábados de<br>
+                                8:00 a. m. a 9:00 p. m.<br>
+  
+                                - Domingo<br>
+                                9:00 a. m. a 6:00 p. m.</p>
+                            </div>
+                          </div>
+  
+  
+                        </div>
+  
+  
+                      </div>
+  
+  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+
+
+            </div>
+
+    
+          </div>
+
+
+          <!-- 2. RUTAS DE EMPESA -->
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+            tabindex="0">
+
+
+            <div class="ruta_search_mb" id="Box_Rutasempresa">
+              <h3>Busca tu ruta
+              </h3>
+              <p>Si quieres saber si la ruta del bus<br>
+                que tomas ha cambiado,<br>
+                haz click aquí.<br>
+              </p>
+              <div class="ruts_input_a">
+                <div class="box2">
+                  <input type="text" placeholder="¿Cómo se llama tu bus?">
+                  <span class="material-symbols-outlined">
+                    search
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- SEARCH CONTENT -->
+            <div class="rutas-body">
+
+              <div class="ruts_input_a">
+                <div class="label">Nombre de la empresa</div>
+
+                <div class="box2">
+
+                  <input type="text" placeholder="ETUPSA73">
+                  <a href="#" class="reset">X</a>
+                </div>
+              </div>
+
+              <div class="ruts_input_a">
+                <div class="label">Nombre de la ruta</div>
+                <div class="box2">
+                  <input type="text" placeholder="8525">
+                  <a href="#" class="reset">X</a>
+                </div>
+              </div>
+              <div class="ruts_input_a">
+                <div class="label">Sobrenombre</div>
+                <div class="box2">
+                  <input type="text" placeholder="73">
+                  <a href="#" class="reset">X</a>
+                </div>
+              </div>
+
+              <div class="ruts_search">
+
+                <button class="btn btn-primary w-100">
+                  Buscar rutas
+                  <span class="material-symbols-outlined">
+                    search
+                  </span>
+                </button>
+
+              </div>
+
+            </div>
+
+
+            <!-- RESULTADOS RUTAS  -->
+            <div class="accordion rutasempresa" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    RESULTADOS
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="rt_options">
+                      <div class="option green">
+                        <div class="dat1">
+                          <div>
+                            <img src="imgs/rutas/img_ruta1.png" alt="ruta 1">
+                            <p><b>ETUPSA73</b><br>
+                              <span>Ruta 7641</span>
+                            </p>
+                          </div>
+                          <strong>0.0 km</strong>
+                        </div>
+                        <div class="dat2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="RutaAnterior">
+                            <label class="form-check-label" for="RutaAnterior">
+                              Ruta anterior
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ida">
+                            <label class="form-check-label" for="ida">
+                              ida
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Vuelta">
+                            <label class="form-check-label" for="Vuelta">
+                              Vuelta
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="Name_rutas">
+
+                        <div class="Column1">
+                          <div class="to_1">
+                            <div class="text_block">Hacia pueblo libre</div>
+                          </div>
+                          <div class="to_ruts1">
+                            <p>
+                              - Sucre<br>
+                              - Pérez Araníbar <br>
+                              - Del Ejército<br>
+                              - José Pardo<br>
+                              - Bolognesi<br>
+                              - 28 de Julio<br>
+                              - Reducto<br>
+                              - San Martín <br>
+                              - Pedro de Osma<br>
+                              - Chorrillos<br>
+                              - José Olaya <br>
+                              - Defensores del Morro<br>
+                              - Prolongación Huaylas<br>
+                              - Guardia Civil Sur<br>
+                              - Vargas Machuca<br>
+                              - San Juan<br>
+                              - Los Héroes<br>
+                              - Mariátegui<br>
+                              - Primavera<br>
+                              - Inti Raymi<br>
+                              - San Pablo Egúsquiza</p>
+                          </div>
+                        </div>
+                        <div class="Column1">
+                          <div class="to_1">
+                            <div class="text_block">Hacia Chorillos</div>
+                          </div>
+                          <div class="to_ruts1">
+                            <p>
+                              - San Pablo Egúsquiza<br>
+                              - Inti Raymi<br>
+                              - Primavera<br>
+                              - Mariátegui<br>
+                              - Los Héroes<br>
+                              - San Juan<br>
+                              - Vargas Machuca<br>
+                              - Prolongación Huaylas<br>
+                              - Defensores del Morro<br>
+                              - A. Iglesias<br>
+                              - Chorrillos<br>
+                              - Pedro de Osma<br>
+                              - Miguel Grau<br>
+                              - Reducto<br>
+                              - 28 de Julio<br>
+                              - Bolognesi<br>
+                              - José Pardo<br>
+                              - Del Ejército<br>
+                              - Pérez Araníbar<br>
+                              - Sucre</p>
+                          </div>
+                        </div>
+                        <div class="Column1">
+                          <div class="to_1">
+                            <div class="text_block">Distritos</div>
+                          </div>
+                          <div class="to_ruts1">
+                            <p>
+                              - Pueblo Libre<br>
+                              - Magdalena<br>
+                              - San Isidro<br>
+                              - Miraflores<br>
+                              - Barranco<br>
+                              - Chorillos<br>
+                              - San Juan de Miraflores
+                          </div>
+                        </div>
+                        <div class="Column1">
+                          <div class="to_1">
+                            <div class="text_block">Horarios</div>
+                          </div>
+                          <div class="to_ruts1">
+                            <p>
+                              - Lunes a sábados de<br>
+                              8:00 a. m. a 9:00 p. m.<br>
+
+                              - Domingo<br>
+                              9:00 a. m. a 6:00 p. m.</p>
+                          </div>
+                        </div>
+
+
+                      </div>
+
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+          <!-- 3. RUTAS POR DISTRITO -->
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+            tabindex="0">
+
+            <div class="ruta_search_mb" id="Box_RutasDistrito">
+              <h3>Rutas por distrito
+              </h3>
+              <p>Conoce cuáles son las rutas<br>
+                que ahora pasan por tu distrito,<br>
+                haz click en el mapa.<br>
+              </p>
+              <div class="ruts_input_a">
+                <div class="box2">
+                  <input type="text" placeholder="¿De qué distrito eres?">
+                  <span class="material-symbols-outlined">
+                    search
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SEARCH CONTENT -->
+            <div class="rutas-body">
+
+              <div class="ruts_input_a">
+                <div class="label">Distrito actual</div>
+
+                <div class="box2">
+
+                  <input type="text" placeholder="Miraflores">
+                  <a href="#" class="reset">X</a>
+                </div>
+              </div>
+
+              <div class="ruts_input_a">
+                <div class="label">Distrito Destino</div>
+                <div class="box2">
+                  <input type="text" placeholder="Pueblo Libre">
+                  <a href="#" class="reset">X</a>
+                </div>
+              </div>
+              <!-- Options Checkbox-->
+              <div class="ruts_btn">
+
+
+                <button class="btn btn-outline-secondary" data-bs-toggle="button">
+                  <span class="material-symbols-outlined">
+                    add
+                  </span>
+                  Añadir
+                </button>
+
+                <button class="btn btn-outline-secondary collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#btnOpciones" aria-controls="btnOpciones" aria-expanded="false">
+                  <span class="material-symbols-outlined">
+                    page_info
+                  </span>
+                  Opciones
+                </button>
+
+
+                <div class="opciones_rutas collapse" id="btnOpciones">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="RD_1" checked="">
+                    <label class="form-check-label" for="RD_1">
+                      Solo Buses
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="RD_2" checked="">
+                    <label class="form-check-label" for="RD_2">
+                      Rutas más directas
+                    </label>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="ruts_search">
+
+                <button class="btn btn-primary w-100">
+                  Buscar rutas
+                  <span class="material-symbols-outlined">
+                    search
+                  </span>
+                </button>
+
+              </div>
+
+            </div>
+
+
+            <!-- RESULTADOS RUTAS  -->
+            <div class="accordion planeaviaje" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    RUTAS DE TRANSPORTE
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+
+
+                    <div class="rt_options">
+                      <div class="option green">
+                        <div class="dat1">
+                          <div>
+                            <img src="imgs/rutas/img_ruta1.png" alt="ruta 1">
+                            <p><b>ETUPSA73</b><br>
+                              <span>Ruta 7641</span>
+                            </p>
+                          </div>
+                          <strong>0.0 km</strong>
+                        </div>
+                        <div class="dat2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="RutaAnterior">
+                            <label class="form-check-label" for="RutaAnterior">
+                              Ruta anterior
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ida">
+                            <label class="form-check-label" for="ida">
+                              ida
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Vuelta">
+                            <label class="form-check-label" for="Vuelta">
+                              Vuelta
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="option red">
+                        <div class="dat1">
+                          <div>
+                            <img src="imgs/rutas/img_ruta2.png" alt="ruta 1">
+                            <p><b>Unidos ETUSA</b><br>
+                              <span>Ruta 7501</span>
+                            </p>
+                          </div>
+                          <strong>0.4 km</strong>
+                        </div>
+                        <div class="dat2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="RutaAnterior">
+                            <label class="form-check-label" for="RutaAnterior">
+                              Ruta anterior
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ida">
+                            <label class="form-check-label" for="ida">
+                              ida
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Vuelta">
+                            <label class="form-check-label" for="Vuelta">
+                              Vuelta
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <!-- TEXT WELCOME -->
+        <div class="ruta_welcome">
+          <h2>Bienvenido al mapa<br>
+            del nuevo plan<br>
+            de rutas</h2>
+
+          <span> ¿Cómo funciona?</span>
+
+          <div class="paso1">
+            <p>Si conoces <b>tu destino</b>
+              y quieres saber cómo
+              trasladarte, elige
+              esta opción.</p>
+          </div>
+          <div class="paso2">
+            <p>Si quieres saber si la
+              <b>ruta del bus</b> que
+              tomas ha cambiado,
+              haz click aquí.
+            </p>
+          </div>
+          <div class="paso3">
+            <p>Conoce cuáles son
+              las rutas que ahora
+              pasan por <b>tu distrito,</b>
+              haz click en el mapa.</p>
+          </div>
+
+
+        </div>
+        <div class="ruta_logo">
+          <img src="imgs/Logo_ATU_rutas.png" alt="">
+
+        </div>
+
+      </div>
+
+
+
+
+      <!-- =========================Mapa========================= -->
+    </main>
+
+  </div>
+
+
+
+  <!-- ========================= JS ========================= -->
+  <script src="bst/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+  <script>
+
+  </script>
+</body>
+
+
+
+
+</html>
